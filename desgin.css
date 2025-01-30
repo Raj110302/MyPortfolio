@@ -1,0 +1,303 @@
+
+#text {
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    color: white;
+    height: 600px;       
+}
+.summa {
+    color: #eeab31;
+    font-weight: bolder;
+}
+.boton {
+    background-color: #eeab31;
+    border: solid;
+    border-radius: 50px;
+    padding: 15px;
+    color: white;
+}
+.boton:hover {          
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.buton {
+    background-color: transparent;
+    border: solid;
+    border-radius: 50px;
+    padding: 15px;
+    color: white;
+}
+.buton:hover {
+    background-color: #eeab31;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transition: 0.3s;
+}
+#stdiv {
+    color: white;
+    height: 350px;
+}
+.dappa {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+#name{
+    text-align: start;
+
+}
+.slide {
+    width: 100%;
+    overflow: hidden;
+    max-width: 500px
+}
+.slide h1 {
+animation: slide-down 1.5s forwards;
+transform:translateX(-100%);
+}
+.GM{
+    position: absolute;
+    justify-items: start;
+    width: 200px;
+    backdrop-filter: blur(1px) saturate(100%);
+    -webkit-backdrop-filter: blur(7px) saturate(100%);
+    background-color: rgba(17, 25, 40, 0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    transform: translateY(-10%);
+    animation: floater 3s infinite; 
+}
+#align{
+    
+    margin-top: 40px;
+    
+}
+#scroll{
+    display: flex;
+    margin-left: 94%;
+    margin-top: 1%;
+    position: fixed;
+    text-align:end;
+    transform: rotate(90deg);   
+}
+.loader {   
+    vertical-align: text-bottom;
+    height: 4px;
+    width: 80px;
+    --c:no-repeat linear-gradient(#000000 0 0);
+    background: var(--c),var(--c),#ffffff;
+    background-size: 60% 100%;
+    animation: l16 3s infinite;
+  }
+  .bordur{
+    border: solid;
+    background-color: transparent;
+    border-radius:12px ;
+    padding: 3px;
+    border-color:#eeab31;
+    color: white;
+  }
+  #table {  
+    width: 600px;
+    padding: 10px;
+    backdrop-filter: blur(1px) saturate(158%);
+    -webkit-backdrop-filter: blur(1px) saturate(158%);
+    background-color: rgba(33, 36, 43, 0.67);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+ 
+    /* transform: translateY(-0.5%);
+    animation: tablee 3s infinite; 
+  }
+  @keyframes tablee {
+    0%{transform: translateY(-0.5%);}
+    50%{transform: translateY(0.5%);}
+    
+   */
+}
+.port{
+    color: #000000;
+    box-shadow: #4b3f27 3px 3px 5px;
+    background-color: #eeab31;
+    border-radius: 12px;
+    width: 280px;
+    height: 280px;
+    
+
+}
+
+#Works{
+    color: white;
+}
+#scale:hover{transform: scale(1.1);
+    transition: 0.3s;
+
+}
+#type{
+    width: 500px;
+    display: inline-block;
+    letter-spacing: 2px;
+    padding-right: 5px;
+    border-right: 5px solid ;
+    width: 45%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: Type 2s steps(14),
+               cursor .4s step-end infinite alternate;
+}
+@keyframes cursor {
+    50%{border-color: transparent;}
+    
+}
+@keyframes Type {
+    from{width: 0;}   
+}
+
+
+@keyframes floater {
+    0%{transform: translateY(-10%);}
+    50%{transform: translateY(10%);}
+    
+  }
+@keyframes slide-down {
+to {
+transform:translateY(0);
+}
+}
+
+  @keyframes l16 {
+    0%   {background-position:-150% 0,-150% 0}
+    66%  {background-position: 250% 0,-150% 0}
+    100% {background-position: 250% 0, 250% 0}
+  }
+
+#contact-id{
+    display: flex;
+}
+
+header {
+    
+   margin-top: 200px;
+    color: white;
+    
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 8px;
+
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+#contact-form{
+    width: 600px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input, textarea, button {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+    #text {
+        height: auto; /* Allow flexible height */
+        text-align: center; /* Center content */
+        padding: 15px; /* Add spacing */
+        width: 100%;
+    }
+
+    .boton, .buton {
+        padding: 10px 20px; /* Reduce padding for smaller buttons */
+        font-size: 0.9rem; /* Adjust button font size */
+    }
+
+    .slide {
+        max-width: 90%; /* Shrink slide container */
+        margin: 0 auto; /* Center it */
+    }
+
+    .dappa {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center them */
+        gap: 20px; /* Add spacing */
+    }
+    #Works{
+        padding-top: 200px;
+    }
+    #abt{
+        width: 100%;
+        width: 440px;
+        align-items: center;
+    }
+    #type{
+        font-size: 23px;
+        color: #eeab31;
+        font-weight: bold;
+    }
+}
+/* For phones (480px and below) */
+@media (max-width: 480px) {
+    body {
+        background-size: cover; /* Ensure background scales well */
+    }
+
+    #text {
+        font-size: 1.1rem; /* Scale text size for readability */
+        padding: 20px;
+    }
+
+    .port {
+        width: 95%; /* Use full screen width */
+        margin: 10px auto;
+    }
+
+    #table {
+        width: 100%; /* Make the table responsive */
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem; /* Reduce heading size */
+    }
+    #stdiv{
+        width: 200px;
+    }
+    #type{
+        font-size: 23px;
+        color: #eeab31;
+        font-weight: bold;
+    }
+}
+/*Phone (400px*/
